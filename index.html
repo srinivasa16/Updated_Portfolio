@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srinivasa Reddy | Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.6rem;
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 1.2rem;
+      color: #0f172a;
+      font-size: 1.6rem;
+      border-left: 4px solid #2563eb;
+      padding-left: 0.6rem;
+    }
+
+    /* About */
+    .about p {
+      font-size: 1.05rem;
+      color: #374151;
+    }
+
+    /* Skills */
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.8rem;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #e5edff;
+      padding: 0.7rem;
+      text-align: center;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .project {
+      border: 1px solid #e5e7eb;
+      padding: 1.2rem;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #111827;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    /* Contact */
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .contact-links a i {
+      font-size: 1.2rem;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .resume-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.4rem;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.resume-btn i {
+  margin-right: 0.4rem;
+}
+
+.resume-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <h1>Srinivasa Reddy</h1>
+  <p>Full Stack Developer | Web Developer | Odoo Learner</p>
+
+  <a href="resume/THUMMA_SRINIVASA_REDDY_RESUME.pdf" class="resume-btn" download>
+    <i class="fas fa-download"></i> Download Resume
+  </a>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    Passionate Computer Science student with strong interest in Full Stack
+    Development and ERP systems like Odoo. I enjoy building scalable,
+    user-friendly web applications and continuously improving my technical skills.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>React</li>
+    <li>PostgreSQL</li>
+    <li>SQL</li>
+    <li>Odoo</li>
+    <li>Cloud Computing</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+  <h3>Pharmacy Management System</h3>
+  <p>
+    Custom Odoo module for pharmacy billing, inventory management,
+    batch tracking, and expiry date handling.
+  </p>
+
+  <a class="project-link" href="https://github.com/srinivasa16/pharmacy-management" target="_blank">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+    <!-- <div class="project">
+      <h3>Pharmacy Management System</h3>
+      <p>
+        Custom Odoo module for pharmacy billing, inventory management,
+        batch tracking, and expiry date handling.
+      </p>
+    </div> -->
+    <div class="project">
+  <h3>Personal Portfolio Website</h3>
+  <p>
+    Responsive personal portfolio built using HTML and CSS
+    to showcase skills and projects.
+  </p>
+
+  <a class="project-link" href="https://github.com/srinivasa16/srinivasa-portfolio" target="_blank">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+    <!-- <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Designed and developed a responsive personal portfolio using
+        HTML and CSS to showcase skills and projects.
+      </p>
+    </div> -->
+    <div class="project">
+  <h3>Smart Traffic Light Control Using AI</h3>
+  <p>
+    AI-based traffic management system using Python, OpenCV,
+    and Machine Learning for real-time signal optimization.
+  </p>
+
+  <a class="project-link" href="https://github.com/srinivasa16/ai-traffic-control" target="_blank">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+    <!-- <div class="project">
+      <h3>Smart Traffic Light Control Using AI</h3>
+      <p>
+        AI-based traffic management system using Python, OpenCV, and
+        Machine Learning to dynamically control traffic signals.
+      </p>
+    </div>
+  </div>
+</section> -->
+
+<section class="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:reddysrinivasa0780@gmail.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://github.com/srinivasa16" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/srinivasareddythumma0780" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Srinivasa Reddy · All Rights Reserved
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srinivasa Reddy | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a.github-icon svg {
+        color: #0f172a;
+        transition: color 0.2s ease;
+    }
+    a.github-icon:hover svg {
+        color: #000;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ===== Layout ===== */
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+
+    /* ===== About ===== */
+    .about p {
+      font-size: 1rem;
+    }
+
+    /* ===== Skills ===== */
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #e2e8f0;
+      padding: 0.6rem;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    /* ===== Projects ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project {
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 0.95rem;
+    }
+
+    /* ===== Contact ===== */
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+  Header
+  <header>
+    <h1>Srinivasa Reddy</h1>
+    <p>Full Stack Developer |Web Developer | Odoo Learner |</p>
+  </header>
+
+  About
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate computer science student interested in web development,
+      ERP systems like Odoo, and building clean, user-friendly applications.
+      I enjoy learning new technologies and solving real-world problems.
+    </p>
+  </section>
+
+  Skills
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>React</li>
+      <li>PostgreSQL</li>
+      <li>Cloud Computing</li>
+      <li>Odoo</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  Projects
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Pharmacy Management System</h3>
+        <p>
+          Custom Odoo module for pharmacy billing, stock management,
+          batch tracking, and expiry dates.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>
+          A clean and responsive portfolio website built using
+          HTML and CSS.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Smart Control Of Traffic Lights Using AI</h3>
+        <p>
+          ● Our proposed system aims to utilize live images from the cameras at traffic junctions for traffic density calculations using image processing and AI.<br>
+          ● By using this AI system, we can reduce congestion & air pollution, thereby providing faster transmit to people.<br>
+          ● This system will help in dynamically changing the traffic light timings based on real-time traffic conditions.<br>
+          ● This project is implemented using Python, OpenCV, and Machine Learning algorithms.<br>
+          ● It is having 3 modules,<br>
+          Traffic Signals Using AI
+          Traffic Detection with Single Shot
+          Yolo Traffic Detection & Counting
+          </p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  Contact -->
+  <!-- <section class="contact">
+    <h2>Contact</h2>
+    <a href="mailto:reddysrinivasa0780@gmail.com">Email</a>
+    <a class="github-icon" href="https://github.com/srinivasa16" target="_blank" title="GitHub">
+        SVG here -->
+        <!-- </a>
+    <a href="https://www.linkedin.com/in/srinivasareddythumma0780">LinkedIn</a>
+  </section> -->
+
+  <!-- Footer -->
+  <!-- <footer>
+    © 2026 Srinivasa Reddy. All rights reserved.
+  </footer>
+</body>
+</html> -->
